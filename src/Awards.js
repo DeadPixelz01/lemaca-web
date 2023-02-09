@@ -15,6 +15,7 @@ const Awards = () => {
                     <li><HashLink to="#2021awards" smooth>2021 Awards</HashLink></li>
                     <li><HashLink to="#2022awards" smooth>2022 Awards</HashLink></li>
                     <li><HashLink to="#2023awards" smooth>2023 Awards</HashLink></li>
+                    <li><HashLink to="#2024awards" smooth>2024 Awards</HashLink></li>
                 </ul>
             </div>
         </div>
@@ -385,6 +386,71 @@ const Awards = () => {
                         <td>Huacaya Junior Female - Black</td>
                         <td>2023</td>
                         <td>Royal Melbourne Fleece Show</td>
+                    </tr>
+                    <tr>
+                        <td>Lemaca Wynter Delight</td>
+                        <td>1st</td>
+                        <td>Huacaya Adult - Roan</td>
+                        <td>2023</td>
+                        <td>Royal Launceston Fleece Show</td>
+                    </tr>
+                    <tr>
+                        <td>Lemaca Wynter Delight</td>
+                        <td>2nd</td>
+                        <td>Huacaya Adult - Roan</td>
+                        <td>2023</td>
+                        <td>Kyneton Fleece Show</td>
+                    </tr>
+                    <tr>
+                        <td>Lemaca Koko Delight</td>
+                        <td>1st</td>
+                        <td>Huacaya Junior - Black</td>
+                        <td>2023</td>
+                        <td>Kyneton Fleece Show</td>
+                    </tr>
+                    <tr>
+                        <td>Greenwood Maceyx</td>
+                        <td>2nd</td>
+                        <td>Huacaya Senior - Black</td>
+                        <td>2023</td>
+                        <td>Kyneton Fleece Show</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 id="2024awards" className='text-center'>2024</h1><hr style={{color: 'blue'}}></hr>
+        <div className="table-responsive text-center">
+            <table className="table text-center">
+                <thead>
+                    <tr>
+                        <th>Alpaca (Name)</th>
+                        <th>Place</th>
+                        <th>Competition</th>
+                        <th>Year</th>
+                        <th>Show</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lemaca Koko Delight</td>
+                        <td>2nd</td>
+                        <td>Huacaya Adult - Black</td>
+                        <td>2024</td>
+                        <td>Berwick Fleece Show</td>
+                    </tr>
+                    <tr>
+                        <td>Lemaca Wynter Delight</td>
+                        <td>1st</td>
+                        <td>Huacaya Senior - Roan</td>
+                        <td>2024</td>
+                        <td>Berwick Fleece Show</td>
+                    </tr>
+                    <tr>
+                        <td>Greenwood Maceyx</td>
+                        <td>2nd</td>
+                        <td>Huacaya Aged - Black</td>
+                        <td>2024</td>
+                        <td>Berwick Fleece Show</td>
                     </tr>
                 </tbody>
             </table>

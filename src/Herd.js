@@ -84,7 +84,7 @@ halter. Koko has a very inquisitive nature.</p>
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_4} />
           <div className="card-body p-4">
-            <h4 className="card-title">Lemaca Elfie (IAR-248576)</h4>
+            <h4 className="card-title">Lemaca Elfie (IAR-248576) - <strong>[SOLD]</strong></h4>
             <p className="card-text"><strong>DoB: </strong>24/12/2019</p>
             <p className="card-text"><strong>Colour: </strong>Dark Grey</p>
             <p className="card-text"><strong>Sex: </strong>Wether</p>
