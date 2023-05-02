@@ -5,12 +5,14 @@ import App from './App';
 import MainNavBar from './MainNavBar';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import MainFooter from './MainFooter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <MainNavBar />
     <App />
+    <MainFooter />
   </React.StrictMode>
 );
 

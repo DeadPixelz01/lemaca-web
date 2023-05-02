@@ -1,16 +1,25 @@
 import logo from './logo.svg';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-
+import Home from './Home';
+import About from './About';
+import Herd from './Herd';
+import Awards from './Awards';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <div class="jumbotron">
-        <h1 class="display-4">Welcome to Lemaca Alpacas</h1>
-        <p class="lead">A boutique alpaca farm residing in Victoria's west</p>
-      </div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/herd" element={<Herd />} />
+            <Route path="/awards" element={<Awards />} />
+          </Routes>
+        </BrowserRouter>
       </header>
     </div>
   );
