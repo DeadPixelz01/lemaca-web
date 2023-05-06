@@ -1,24 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+import banner from "./img/home-banner.jpeg";
 
 const Home = () => {
   return (
-    <section className="py-4 py-xl-5">
+    <section>
         <section className="py-4 py-xl-5">
-            <div className="container">
-                <div className="border rounded border-0 d-flex flex-column justify-content-center align-items-center p-4 py-5" styles="height: 500px;backdrop-filter: opacity(1);-webkit-backdrop-filter: opacity(1);backgroundImage: url(/home-banner.jpeg) center / contain repeat-x;">
+            <div className='container'>
+                <div className="border rounded border-0 d-flex flex-column justify-content-center align-items-center y-4 py-5" style={{backgroundImage: `url(${banner})`, height: '500px', }}>
                     <div className="row">
-                        <div className="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center" styles="background: rgba(33,32,32,0.66);border-radius: 6px;">
+                        <div className="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center" style={{backgroundColor: 'rgba(33,32,32,0.66)', borderRadius: '6px'}}>
                             <div>
-                                <h1 className="text-uppercase fw-bold mb-3" styles="color: rgb(255,255,255);">Welcome to Lemaca's alpacas</h1>
-                                <p className="mb-4" styles="color: rgb(255,255,255);">A boutique alpaca farm residing in Victoria's west specialising in dark&nbsp;Huacayas</p>
+                                <h1 className="text-uppercase fw-bold mb-3" style={{color: 'rgb(255,255,255)'}}>Welcome to Lemaca's alpacas</h1>
+                                <p className="mb-4" style={{color: 'rgb(255,255,255)'}}>A boutique alpaca farm residing in central Victroria specialising in dark&nbsp;Huacayas</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div className="container py-4 py-xl-5">
+        <div className="container">
             <div className="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
                 <div className="col">
                     <div className="card">
