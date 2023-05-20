@@ -1,5 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/js/dist/carousel';
 import './App.css';
+import image_1 from "./img/Lemaca_5.jpeg";
+import image_2 from "./img/Lemaca_2.jpeg";
+import image_3 from "./img/Lemaca_9.jpeg";
 
 const About = () => {
   return (
@@ -8,9 +12,9 @@ const About = () => {
             <div className="col">
                 <div className="carousel slide" data-bs-ride="false" id="carousel-1">
                     <div className="carousel-inner">
-                        <div className="carousel-item active"><img className="w-100 d-block" src={'https://cdn.bootstrapstudio.io/placeholders/1400x800.png'} alt="Slide Image" width="636" height="390" /></div>
-                        <div className="carousel-item"><img className="w-100 d-block" src={'https://cdn.bootstrapstudio.io/placeholders/1400x800.png'} alt="Slide Image" /></div>
-                        <div className="carousel-item"><img className="w-100 d-block" src={'https://cdn.bootstrapstudio.io/placeholders/1400x800.png'} alt="Slide Image" /></div>
+                        <div className="carousel-item active"><img className="img-fluid" src={image_1} alt="Slide Image" /></div>
+                        <div className="carousel-item"><img className="img-fluid" src={image_2} alt="Slide Image" /></div>
+                        <div className="carousel-item"><img className="img-fluid" src={image_3} alt="Slide Image" /></div>
                     </div>
                     <div><a className="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span className="carousel-control-prev-icon"></span><span className="visually-hidden">Previous</span></a><a className="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span className="carousel-control-next-icon"></span><span className="visually-hidden">Next</span></a></div>
                     <ol className="carousel-indicators">
