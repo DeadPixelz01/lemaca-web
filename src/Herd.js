@@ -20,8 +20,11 @@ const Herd = () => {
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_1} />
           <div className="card-body p-4">
-            <h4 className="card-title">Amigo</h4>
-            <p className="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            <h4 className="card-title">Green Gully Amigo (IAR-221309)</h4>
+            <p className="card-text"><strong>DoB: </strong>1/9/2016</p>
+            <p className="card-text"><strong>Colour: </strong>Soild True Black</p>
+            <p className="card-text"><strong>Sex: </strong>Certified Male</p>
+            <p className="card-text"><strong>DNA Certification: </strong>221309</p>
           </div>
         </div>
       </div>
@@ -29,8 +32,10 @@ const Herd = () => {
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_2} />
           <div className="card-body p-4">
-            <h4 className="card-title">Wynter</h4>
-            <p className="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+          <h4 className="card-title">Wynter Delight (IAR-248577)</h4>
+            <p className="card-text"><strong>DoB: </strong>3/6/2020</p>
+            <p className="card-text"><strong>Colour: </strong>Roan</p>
+            <p className="card-text"><strong>Sex: </strong>Female</p>
           </div>
         </div>
       </div>
@@ -38,8 +43,10 @@ const Herd = () => {
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_3} />
           <div className="card-body p-4">
-            <h4 className="card-title">Macey</h4>
-            <p className="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            <h4 className="card-title">Greenwood Maceyx (IAR-192038)</h4>
+            <p className="card-text"><strong>DoB: </strong>23/5/2016</p>
+            <p className="card-text"><strong>Colour: </strong>Soild Bay Black</p>
+            <p className="card-text"><strong>Sex: </strong>Female</p>
           </div>
         </div>
       </div>
@@ -47,8 +54,10 @@ const Herd = () => {
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_4} />
           <div className="card-body p-4">
-            <h4 className="card-title">Elfie</h4>
-            <p className="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            <h4 className="card-title">Lemaca Elfie (IAR-248576)</h4>
+            <p className="card-text"><strong>DoB: </strong>24/12/2019</p>
+            <p className="card-text"><strong>Colour: </strong>Dark Grey</p>
+            <p className="card-text"><strong>Sex: </strong>Wether</p>
           </div>
         </div>
       </div>
