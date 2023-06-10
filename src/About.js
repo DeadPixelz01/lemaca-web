@@ -28,9 +28,16 @@ const About = () => {
                 <div className="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
                     <div>
                         <h4>About us...</h4>
-                        <p>Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><a href="#">Learn More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" className="bi bi-arrow-right">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                            </svg></a>
+                        <p>Lemaca was established in 2019. Like many other alpaca enthusiast we started our small herd with
+just two female alpacas name Greenwood MaceyX a Bay Black and Wahroongah Dede a Medium
+Grey. Both registered alpacas were purchase on Mother’s Day 2019 just to keep the grass down on
+our property.</p>
+                        <p>From there the passion and knowledge of alpacas grew and is still growing to this day. We are
+situated in Victoria near Ballarat and are members of the alpaca association the AAA Central Region.
+Lemaca has grown over the years and our herd is steadily increasing, although our moto is “to stay
+with a small herd containing quality stock.” Please take the time to browse through our webpage,
+viewing our amazing animals and our show results that we are extremely proud to have achieved
+and hoping to continue increasing our fleece standards in the years to come.</p>
                     </div>
                 </div>
                 <div className="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5"></div>
