@@ -8,16 +8,14 @@ const Home = () => {
     <section>
         <section className="py-4 py-xl-5">
             <div className='container'>
-                <div className="border rounded border-0 d-flex flex-column justify-content-center align-items-center y-4 py-5" style={{backgroundImage: `url(${banner})`, height: '500px', }}>
-                    <div className="row">
-                        <div className="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center" style={{backgroundColor: 'rgba(33,32,32,0.66)', borderRadius: '6px'}}>
-                            <div>
-                                <h1 className="text-uppercase fw-bold mb-3" style={{color: 'rgb(255,255,255)'}}>Welcome to Lemaca alpacas</h1>
-                                <p className="mb-4" style={{color: 'rgb(255,255,255)'}}>A boutique alpaca farm residing in central Victroria specialising in &nbsp;Huacayas</p>
-                            </div>
-                        </div>
+                <div className="card">
+                    <div className="card-body text-center">
+                        <h4 className="card-title">Welcome to Lemaca Alpacas</h4>
+                        <p className="card-text">A boutique alpaca farm residing in central Victoria specialising in&nbsp;Huacayas</p>
                     </div>
                 </div>
+                <br></br>
+                <div className="border rounded border-0 d-flex flex-column justify-content-center align-items-center y-4 py-5" style={{backgroundImage: `url(${banner})`, height: '575px', }}></div>
             </div>
         </section>
         <div className="container">
@@ -31,7 +29,7 @@ const Home = () => {
                                 </svg></div>
                             <h4 className="card-title">About us</h4>
                             <p className="card-text">We are a small farm residing in Victoria's western region.</p>
-                            <Button>Learn more about us</Button>
+                            <Button href="/about">Learn more about us</Button>
                         </div>
                     </div>
                 </div>
@@ -43,7 +41,7 @@ const Home = () => {
                                 </svg></div>
                             <h4 className="card-title">Our herd</h4>
                             <p className="card-text">Lemaca has owned a few alpacas over the years, all brought something unique to our farm.</p>
-                            <Button>Read about our herd</Button>
+                            <Button href="/herd">Read about our herd</Button>
                         </div>
                     </div>
                 </div>
@@ -55,8 +53,8 @@ const Home = () => {
                                     <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"></path>
                                 </svg></div>
                             <h4 className="card-title">Award winning alpacas</h4>
-                            <p className="card-text">From big shows to smaller shows, Lemaca enjoys participating in most of VCR alpaca competitions.</p>
-                            <Button>View the award table</Button>
+                            <p className="card-text">From big shows to smaller shows, Lemaca enjoys participating in competitions around the country.</p>
+                            <Button href="/awards">View the award table</Button>
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ function MainNavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-      <span className="bs-icon-sm bs-icon-rounded d-flex justify-content-center align-items-center me-2 bs-icon" style={{fontSize: "20px", backgroundImage: `url(${logo})`, width: "100px", height: "100px"}}></span>
+      <span className="bs-icon-sm bs-icon-rounded d-flex justify-content-center align-items-center me-2 bs-icon" style={{fontSize: "20px", backgroundImage: `url(${logo})`, width: "105px", height: "100px"}}></span>
         <Navbar.Brand href="/">Lemaca</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

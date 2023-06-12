@@ -34,8 +34,9 @@ Grey. Both registered alpacas were purchase on Mother’s Day 2019 just to keep 
 our property.</p>
                         <p>From there the passion and knowledge of alpacas grew and is still growing to this day. We are
 situated in Victoria near Ballarat and are members of the alpaca association the AAA Central Region.
-Lemaca has grown over the years and our herd is steadily increasing, although our moto is “to stay
-with a small herd containing quality stock.” Please take the time to browse through our webpage,
+Lemaca has grown over the years and our herd is steadily increasing, although our belief is <i>“to stay
+with a small herd containing quality stock.”</i></p>
+<p>Please take the time to browse through our webpage,
 viewing our amazing animals and our show results that we are extremely proud to have achieved
 and hoping to continue increasing our fleece standards in the years to come.</p>
                     </div>

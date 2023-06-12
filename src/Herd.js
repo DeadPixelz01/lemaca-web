@@ -69,7 +69,7 @@ to you.</p>
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_5} />
           <div className="card-body p-4">
-            <h4 className="card-title">Lemaca Koko Delight (IAR-XXXX)</h4>
+            <h4 className="card-title">Lemaca Koko Delight (IAR-248578)</h4>
             <p className="card-text"><strong>DoB: </strong>22/02/2022</p>
             <p className="card-text"><strong>Colour: </strong>Solid Bay Black</p>
             <p className="card-text"><strong>Sex: </strong>Female</p>
