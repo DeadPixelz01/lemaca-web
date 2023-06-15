@@ -13,7 +13,7 @@ const Herd = () => {
     <div className="row mb-5">
       <div className="col-md-8 col-xl-6 text-center mx-auto">
         <h2>Our alpacas...</h2>
-        <p>Here is a detailed history of the alpacas Lemaca has owned over the years. We are very proud of each and every one of them as they all brought something new to our farm.</p>
+        <p>Below is a detailed history of the alpacas Lemaca has owned over the years. We are very proud of each and every one of them as they all brought something new to our farm.</p>
       </div>
     </div>
     <div className="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
@@ -42,7 +42,7 @@ an asset to our breeding succussion of the coloured black alpacas.</p>
             <p className="card-text"><strong>Colour: </strong>Roan</p>
             <p className="card-text"><strong>Sex: </strong>Female</p>
             <p className="card-text">Wynter is our second born cria and was
-birth by Greenwood MaceyX. Wynter has a very carefree attitude and will be the first to greet
+birthed by Greenwood MaceyX. Wynter has a very carefree attitude and will be the first to greet
 anyone who comes to the property or stops by the gate. Wynter has achieved excellent show results
 in both fleece and halter to which we hope to extend to her cria in the very near future.</p>
           </div>
@@ -74,7 +74,7 @@ to you.</p>
             <p className="card-text"><strong>Colour: </strong>Solid Bay Black</p>
             <p className="card-text"><strong>Sex: </strong>Female</p>
             <p className="card-text">Koko is our third born cria and was second to
-be birth by Greenwood MaceyX. Koko has followed in her mother and sister’s footsteps and
+be birthed by Greenwood MaceyX. Koko has followed in her mother and sister’s footsteps and
 continues to show a high quality fleece. Koko has also accomplished show results in both fleece and
 halter. Koko has a very inquisitive nature.</p>
           </div>
@@ -88,7 +88,7 @@ halter. Koko has a very inquisitive nature.</p>
             <p className="card-text"><strong>DoB: </strong>24/12/2019</p>
             <p className="card-text"><strong>Colour: </strong>Dark Grey</p>
             <p className="card-text"><strong>Sex: </strong>Wether</p>
-            <p className="card-text">Elfie is our first born cria birth by Wahroogah Dede on
+            <p className="card-text">Elfie is our first born cria birthed by Wahroogah Dede on
 Christmas Eve, hence the name. Elfie’s fleece is not to a show standard and for this reason he has
 been wethered. Elfie has a very friendly personally, he will always meet us at the gate. Elfie plays
 the role of keeping our certified males company.</p>

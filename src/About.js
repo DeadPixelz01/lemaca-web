@@ -33,12 +33,12 @@ just two female alpacas name Greenwood MaceyX a Bay Black and Wahroongah Dede a 
 Grey. Both registered alpacas were purchase on Mother’s Day 2019 just to keep the grass down on
 our property.</p>
                         <p>From there the passion and knowledge of alpacas grew and is still growing to this day. We are
-situated in Victoria near Ballarat and are members of the alpaca association the AAA Central Region.
+situated in Victoria near Ballarat and are members of the Australian Alpaca Association Central Region.
 Lemaca has grown over the years and our herd is steadily increasing, although our belief is <i>“to stay
 with a small herd containing quality stock.”</i></p>
 <p>Please take the time to browse through our webpage,
-viewing our amazing animals and our show results that we are extremely proud to have achieved
-and hoping to continue increasing our fleece standards in the years to come.</p>
+viewing our amazing animals and our show results that we are extremely proud to have achieved.
+We are hoping to continue increasing our fleece standards in the years to come.</p>
                     </div>
                 </div>
                 <div className="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5"></div>

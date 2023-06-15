@@ -35,49 +35,49 @@ const Awards = () => {
                     <tr>
                         <td>Green Gully Amigo</td>
                         <td>2nd</td>
-                        <td>Huacaya Adult Male - Black (H-KHAM)</td>
+                        <td>Huacaya Adult Male - Black</td>
                         <td>2018</td>
                         <td>Murwillumbah Alpaca Halter Show</td>
                     </tr>
                     <tr>
                         <td>Green Gully Amigo</td>
                         <td>2nd</td>
-                        <td>Huacaya Adult Male - Black (H-KHAM)</td>
+                        <td>Huacaya Adult Male - Black</td>
                         <td>2018</td>
                         <td>Charles Ledgar Alpaca Halter Show</td>
                     </tr>
                     <tr>
                         <td>Green Gully Amigo</td>
                         <td>1st</td>
-                        <td>Huacaya Adult Male - Black (H-KHAM)</td>
+                        <td>Huacaya Adult Male - Black</td>
                         <td>2018</td>
                         <td>Grafton Colourbration Halter Show</td>
                     </tr>
                     <tr>
                         <td>Green Gully Amigo</td>
                         <td>1st</td>
-                        <td>Huacaya Adult Male - Black (H-KHAM)</td>
+                        <td>Huacaya Adult Male (Intermediate) - Black</td>
                         <td>2018</td>
                         <td>Grafton Colourbration Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Green Gully Amigo</td>
                         <td>1st</td>
-                        <td>Huacaya Adult Male - Black (H-KHAM)</td>
+                        <td>Huacaya Adult Male - Black</td>
                         <td>2018</td>
                         <td>Glen Innes New England Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Green Gully Amigo</td>
                         <td>2nd</td>
-                        <td>Huacaya Adult Male - Black (H-KHAM)</td>
+                        <td>Huacaya Adult Male (Intermediate) - Black</td>
                         <td>2018</td>
                         <td>Glen Innes New England Halter Show</td>
                     </tr>
                     <tr>
                         <td>Green Gully Amigo</td>
                         <td>1st</td>
-                        <td>Huacaya Adult Male - Black (H-KHAM)</td>
+                        <td>Huacaya Adult Male (Intermediate) - Black</td>
                         <td>2018</td>
                         <td>Maleny Fleece Show</td>
                     </tr>
@@ -101,7 +101,7 @@ const Awards = () => {
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2020</td>
                         <td>Berwick Fleece Show</td>
                     </tr>
@@ -125,28 +125,28 @@ const Awards = () => {
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Mature Female - Black</td>
                         <td>2021</td>
                         <td>Red Hill VER Celebration Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>3rd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Mature Female - Black</td>
                         <td>2021</td>
                         <td>Royal Hobert Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>1st</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Junior Female - Black</td>
                         <td>2021</td>
                         <td>Red Hill VER Celebration Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>3rd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Junior Female - Black</td>
                         <td>2021</td>
                         <td>Royal Hobert Fleece Show</td>
                     </tr>
@@ -170,112 +170,112 @@ const Awards = () => {
                     <tr>
                         <td>Green Gully Amigo</td>
                         <td>3rd</td>
-                        <td>Huacaya Adult Male - Black (H-KHAM)</td>
+                        <td>Huacaya Senior Male - Black</td>
                         <td>2022</td>
                         <td>Kyneton Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Koko Delight</td>
                         <td>3rd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Junior Female - Brown</td>
                         <td>2022</td>
                         <td>Seymour Halter Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>3rd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2022</td>
                         <td>Royal Bathurst Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2022</td>
                         <td>Red Hill VER Celebration Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>3rd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2022</td>
                         <td>Bendigo Victoria Colourbration Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2022</td>
                         <td>Royal Melbourne Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>3rd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2022</td>
                         <td>Seymour Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2022</td>
                         <td>Kyneton Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2022</td>
                         <td>Royal Bathurst Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>1st</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Female (Intermediate) - Black</td>
                         <td>2022</td>
                         <td>Hawkesbury Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>1st</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Female (Intermediate) - Black</td>
                         <td>2022</td>
                         <td>Red Hill VER Celebration Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Female (Intermediate) - Black</td>
                         <td>2022</td>
                         <td>Bendigo Victoria Colourbration Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>1st</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Female (Intermediate) - Black</td>
                         <td>2022</td>
                         <td>Royal Melbourne Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>3rd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Female (Intermediate) - Black</td>
                         <td>2022</td>
                         <td>Seymour Halter Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>1st</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Female (Intermediate) - Black</td>
                         <td>2022</td>
                         <td>Seymour Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>1st</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Female (Intermediate) - Black</td>
                         <td>2022</td>
                         <td>Kyneton Fleece Show</td>
                     </tr>
@@ -298,42 +298,42 @@ const Awards = () => {
                     <tr>
                         <td>Lemaca Koko Delight</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Junior - Brown</td>
                         <td>2023</td>
                         <td>Berwick Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Senior Female - Black</td>
                         <td>2023</td>
                         <td>Berwick Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Greenwood Maceyx</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Adult Female - Black</td>
                         <td>2023</td>
                         <td>Bendigo Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Adult Female - Roan</td>
                         <td>2023</td>
                         <td>Berwick Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>2nd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Adult Female - Roan</td>
                         <td>2023</td>
                         <td>Berwick Halter Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
                         <td>3rd</td>
-                        <td>XXXXX</td>
+                        <td>Huacaya Adult Female - Roan</td>
                         <td>2023</td>
                         <td>Bendigo Victoria Colourbration Fleece Show</td>
                     </tr>
