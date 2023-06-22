@@ -314,7 +314,7 @@ const Awards = () => {
                         <td>2nd</td>
                         <td>Huacaya Adult Female - Black</td>
                         <td>2023</td>
-                        <td>Bendigo Fleece Show</td>
+                        <td>Bendigo Victoria Colourbration Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>

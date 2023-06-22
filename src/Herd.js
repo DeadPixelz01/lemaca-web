@@ -59,7 +59,7 @@ in both fleece and halter to which we hope to extend to her cria in the very nea
             <p className="card-text">Macey was one of the first alpacas to arrive at
 our property and the first alpaca of ours to be entered into alpaca fleece shows. To our surprise we
 achieved show results with her quality fleece. Her high standard quality fleece has now been
-extended to her cria’s who have also had succession in both fleece and halter shows. Macey has a
+extended to her cria’s who have also had success in both fleece and halter shows. Macey has a
 very gentle but shy temperament and is the type to stand back in the herd until she gets accustom
 to you.</p>
           </div>

@@ -29,7 +29,7 @@ const About = () => {
                     <div>
                         <h4>About us...</h4>
                         <p>Lemaca was established in 2019. Like many other alpaca enthusiast we started our small herd with
-just two female alpacas name Greenwood MaceyX a Bay Black and Wahroongah Dede a Medium
+just two female alpacas named Greenwood MaceyX a Bay Black and Wahroongah Dede a Medium
 Grey. Both registered alpacas were purchase on Mother’s Day 2019 just to keep the grass down on
 our property.</p>
                         <p>From there the passion and knowledge of alpacas grew and is still growing to this day. We are
