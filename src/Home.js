@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="card">
                     <div className="card-body text-center">
                         <h4 className="card-title">Welcome to Lemaca Alpacas</h4>
-                        <p className="card-text">A boutique alpaca farm residing in the Ballarat region specialising in&nbsp;Huacayas</p>
+                        <p className="card-text">A boutique alpaca farm residing in the Ballarat region specialising in&nbsp;Huacaya</p>
                     </div>
                 </div>
                 <br></br>

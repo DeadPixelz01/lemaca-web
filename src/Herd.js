@@ -37,7 +37,7 @@ an asset to our breeding succussion of the coloured black alpacas.</p>
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_2} />
           <div className="card-body p-4">
-          <h4 className="card-title">Wynter Delight (IAR-248577)</h4>
+          <h4 className="card-title">Lemaca Wynter Delight (IAR-248577)</h4>
             <p className="card-text"><strong>DoB: </strong>3/6/2020</p>
             <p className="card-text"><strong>Colour: </strong>Roan</p>
             <p className="card-text"><strong>Sex: </strong>Female</p>
