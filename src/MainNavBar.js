@@ -16,6 +16,7 @@ function MainNavBar() {
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/herd">Herd</Nav.Link>
             <Nav.Link href="/awards">Awards</Nav.Link>
+            <Nav.Link href="/stud">Stud Service</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
