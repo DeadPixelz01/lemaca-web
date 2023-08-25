@@ -134,7 +134,7 @@ const Awards = () => {
                         <td>3rd</td>
                         <td>Huacaya Mature Female - Black</td>
                         <td>2021</td>
-                        <td>Royal Hobert Fleece Show</td>
+                        <td>Royal Hobart Fleece Show</td>
                     </tr>
                     <tr>
                         <td>Lemaca Wynter Delight</td>
@@ -148,7 +148,7 @@ const Awards = () => {
                         <td>3rd</td>
                         <td>Huacaya Junior Female - Black</td>
                         <td>2021</td>
-                        <td>Royal Hobert Fleece Show</td>
+                        <td>Royal Hobart Fleece Show</td>
                     </tr>
                 </tbody>
             </table>
