@@ -358,6 +358,34 @@ const Awards = () => {
                         <td>2023</td>
                         <td>Ballarat Sheep + Alpaca Fleece Show</td>
                     </tr>
+                    <tr>
+                        <td>Lemaca Alpacas</td>
+                        <td>4th</td>
+                        <td>Alpaca Photo Competition</td>
+                        <td>2023</td>
+                        <td>Bendigo Show</td>
+                    </tr>
+                    <tr>
+                        <td>Greenwood Maceyx</td>
+                        <td>2nd</td>
+                        <td>Huacaya Senior Female - Black</td>
+                        <td>2023</td>
+                        <td>Royal Melbourne Fleece Show</td>
+                    </tr>
+                    <tr>
+                        <td>Lemaca Wynter Delight</td>
+                        <td>2nd</td>
+                        <td>Huacaya Adult Female - Roan</td>
+                        <td>2023</td>
+                        <td>Royal Melbourne Fleece Show</td>
+                    </tr>
+                    <tr>
+                        <td>Lemaca Koko Delight</td>
+                        <td>2nd</td>
+                        <td>Huacaya Junior Female - Black</td>
+                        <td>2023</td>
+                        <td>Royal Melbourne Fleece Show</td>
+                    </tr>
                 </tbody>
             </table>
         </div>

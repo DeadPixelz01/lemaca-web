@@ -4,6 +4,8 @@ import './App.css';
 import image_1 from "./img/Lemaca_5.jpeg";
 import image_2 from "./img/Lemaca_2.jpeg";
 import image_3 from "./img/Lemaca_9.jpeg";
+import image_4 from "./img/alpaca-group.jpeg";
+import image_5 from "./img/alpaca-group2.jpeg";
 
 const About = () => {
   return (
@@ -12,15 +14,19 @@ const About = () => {
             <div className="col">
                 <div className="carousel slide" data-bs-ride="false" id="carousel-1">
                     <div className="carousel-inner">
-                        <div className="carousel-item active"><img className="img-fluid" src={image_1} alt="Slide Image" /></div>
-                        <div className="carousel-item"><img className="img-fluid" src={image_2} alt="Slide Image" /></div>
-                        <div className="carousel-item"><img className="img-fluid" src={image_3} alt="Slide Image" /></div>
+                        <div className="carousel-item active"><img className="img-fluid" src={image_1} alt="Baby Koko" /></div>
+                        <div className="carousel-item"><img className="img-fluid" src={image_2} alt="Alpaca Family" /></div>
+                        <div className="carousel-item"><img className="img-fluid" src={image_3} alt="Wynter and Maceyx" /></div>
+                        <div className="carousel-item"><img className="img-fluid" src={image_4} alt="Leanne and alpaca" /></div>
+                        <div className="carousel-item"><img className="img-fluid" src={image_5} alt="Award winning" /></div>
                     </div>
                     <div><a className="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span className="carousel-control-prev-icon"></span><span className="visually-hidden">Previous</span></a><a className="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span className="carousel-control-next-icon"></span><span className="visually-hidden">Next</span></a></div>
                     <ol className="carousel-indicators">
                         <li data-bs-target="#carousel-1" data-bs-slide-to="0" className="active"></li>
                         <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
                         <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carousel-1" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#carousel-1" data-bs-slide-to="4"></li>
                     </ol>
                 </div>
             </div>
