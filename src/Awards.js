@@ -3,6 +3,34 @@ import './App.css';
 import { HashLink } from 'react-router-hash-link';
 
 const Awards = () => {
+
+    const [sortConfig, setSortConfig] = useState(null);
+
+    const sortTable = (column) => {
+        let direction = 'ascending';
+        if (sortConfig && sortConfig.column === column && sortConfig.direction === 'ascending') {
+            direction = 'descending';
+        }
+        setSortConfig({ column, direction });
+    };
+
+    const sortedData = (data) => {
+        let sortedRows = [...data];
+        if (sortConfig !== null) {
+            sortedRows.sort((a, b) => {
+                if (a[sortConfig.column] < b[sortConfig.column]) {
+                    return sortConfig.direction === 'ascending' ? -1 : 1;
+                }
+                if (a[sortConfig.column] > b[sortConfig.column]) {
+                    return sortConfig.direction === 'ascending' ? 1 : -1;
+                }
+                return 0;
+            });
+        }
+        return sortedRows;
+    };
+
+
   return (
 <div className="container py-4 py-xl-5">
         <div className="row mb-5">
@@ -20,18 +48,20 @@ const Awards = () => {
             </div>
         </div>
         
-        <h1 id="2018awards" className='text-center'>2018</h1><hr style={{color: 'blue'}}></hr>
-        <div className="table-responsive text-center">
-            <table className="table text-center">
-                <thead>
-                    <tr>
-                        <th>Alpaca (Name)</th>
-                        <th>Place</th>
-                        <th>Competition</th>
-                        <th>Year</th>
-                        <th>Show</th>
-                    </tr>
-                </thead>
+            {/* 2018 Awards */}
+            <h1 id="2018awards" className='text-center'>2018</h1>
+            <hr style={{ color: 'blue' }}></hr>
+            <div className="table-responsive text-center">
+                <table className="table text-center">
+                    <thead>
+                        <tr>
+                            <th onClick={() => sortTable('Alpaca (Name)')}>Alpaca (Name)</th>
+                            <th onClick={() => sortTable('Place')}>Place</th>
+                            <th onClick={() => sortTable('Competition')}>Competition</th>
+                            <th onClick={() => sortTable('Year')}>Year</th>
+                            <th onClick={() => sortTable('Show')}>Show</th>
+                        </tr>
+                    </thead>
                 <tbody>
                     <tr>
                         <td>Green Gully Amigo</td>
