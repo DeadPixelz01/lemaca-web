@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import { HashLink } from 'react-router-hash-link';
+import React, { useEffect, useState } from "react";
 
 const Awards = () => {
 
@@ -30,6 +31,68 @@ const Awards = () => {
         return sortedRows;
     };
 
+
+    const data2018 = [
+        { 'Alpaca (Name)': 'Green Gully Amigo', 'Place': '2nd', 'Competition': 'Huacaya Adult Male - Black', 'Year': '2018', 'Show': 'Murwillumbah Alpaca Halter Show' },
+        { 'Alpaca (Name)': 'Green Gully Amigo', 'Place': '2nd', 'Competition': 'Huacaya Adult Male - Black', 'Year': '2018', 'Show': 'Charles Ledgar Alpaca Halter Show' },
+        { 'Alpaca (Name)': 'Green Gully Amigo', 'Place': '1st', 'Competition': 'Huacaya Adult Male - Black', 'Year': '2018', 'Show': 'Grafton Colourbration Halter Show' },
+        { 'Alpaca (Name)': 'Green Gully Amigo', 'Place': '1st', 'Competition': 'Huacaya Adult Male (Intermediate) - Black', 'Year': '2018', 'Show': 'Grafton Colourbration Fleece Show' },
+        { 'Alpaca (Name)': 'Green Gully Amigo', 'Place': '1st', 'Competition': 'Huacaya Adult Male - Black', 'Year': '2018', 'Show': 'Glen Innes New England Fleece Show' },
+        { 'Alpaca (Name)': 'Green Gully Amigo', 'Place': '2nd', 'Competition': 'Huacaya Adult Male (Intermediate) - Black', 'Year': '2018', 'Show': 'Glen Innes New England Halter Show' },
+        { 'Alpaca (Name)': 'Green Gully Amigo', 'Place': '1st', 'Competition': 'Huacaya Adult Male (Intermediate) - Black', 'Year': '2018', 'Show': 'Maleny Fleece Show' }
+    ];
+    
+    const data2021 = [
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Mature Female - Black', 'Year': '2021', 'Show': 'Red Hill VER Celebration Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '3rd', 'Competition': 'Huacaya Mature Female - Black', 'Year': '2021', 'Show': 'Royal Hobart Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '1st', 'Competition': 'Huacaya Junior Female - Black', 'Year': '2021', 'Show': 'Red Hill VER Celebration Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '3rd', 'Competition': 'Huacaya Junior Female - Black', 'Year': '2021', 'Show': 'Royal Hobart Fleece Show' }
+    ];
+
+    const data2022 = [
+        { 'Alpaca (Name)': 'Green Gully Amigo', 'Place': '3rd', 'Competition': 'Huacaya Senior Male - Black', 'Year': '2022', 'Show': 'Kyneton Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Koko Delight', 'Place': '3rd', 'Competition': 'Huacaya Junior Female - Brown', 'Year': '2022', 'Show': 'Seymour Halter Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '3rd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2022', 'Show': 'Royal Bathurst Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2022', 'Show': 'Red Hill VER Celebration Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '3rd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2022', 'Show': 'Bendigo Victoria Colourbration Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2022', 'Show': 'Royal Melbourne Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '3rd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2022', 'Show': 'Seymour Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2022', 'Show': 'Kyneton Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '2nd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2022', 'Show': 'Royal Bathurst Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '1st', 'Competition': 'Huacaya Female (Intermediate) - Black', 'Year': '2022', 'Show': 'Hawkesbury Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '1st', 'Competition': 'Huacaya Female (Intermediate) - Black', 'Year': '2022', 'Show': 'Red Hill VER Celebration Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '2nd', 'Competition': 'Huacaya Female (Intermediate) - Black', 'Year': '2022', 'Show': 'Bendigo Victoria Colourbration Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '1st', 'Competition': 'Huacaya Female (Intermediate) - Black', 'Year': '2022', 'Show': 'Royal Melbourne Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '3rd', 'Competition': 'Huacaya Female (Intermediate) - Black', 'Year': '2022', 'Show': 'Seymour Halter Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '1st', 'Competition': 'Huacaya Female (Intermediate) - Black', 'Year': '2022', 'Show': 'Seymour Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '1st', 'Competition': 'Huacaya Female (Intermediate) - Black', 'Year': '2022', 'Show': 'Kyneton Fleece Show' }
+    ];
+
+    const data2023 = [
+        { 'Alpaca (Name)': 'Lemaca Koko Delight', 'Place': '2nd', 'Competition': 'Huacaya Junior - Brown', 'Year': '2023', 'Show': 'Berwick Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2023', 'Show': 'Berwick Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Adult Female - Black', 'Year': '2023', 'Show': 'Bendigo Victoria Colourbration Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '2nd', 'Competition': 'Huacaya Adult Female - Roan', 'Year': '2023', 'Show': 'Berwick Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '2nd', 'Competition': 'Huacaya Adult Female - Roan', 'Year': '2023', 'Show': 'Berwick Halter Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '3rd', 'Competition': 'Huacaya Adult Female - Roan', 'Year': '2023', 'Show': 'Bendigo Victoria Colourbration Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '2nd', 'Competition': 'Huacaya Adult Female - Roan', 'Year': '2023', 'Show': 'Ballarat Sheep + Alpaca Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Koko Delight', 'Place': '2nd', 'Competition': 'Huacaya Junior Female - Black', 'Year': '2023', 'Show': 'Ballarat Sheep + Alpaca Halter Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2023', 'Show': 'Ballarat Sheep + Alpaca Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Alpacas', 'Place': '4th', 'Competition': 'Alpaca Photo Competition', 'Year': '2023', 'Show': 'Bendigo Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Senior Female - Black', 'Year': '2023', 'Show': 'Royal Melbourne Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '2nd', 'Competition': 'Huacaya Adult Female - Roan', 'Year': '2023', 'Show': 'Royal Melbourne Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Koko Delight', 'Place': '2nd', 'Competition': 'Huacaya Junior Female - Black', 'Year': '2023', 'Show': 'Royal Melbourne Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '1st', 'Competition': 'Huacaya Adult - Roan', 'Year': '2023', 'Show': 'Royal Launceston Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '2nd', 'Competition': 'Huacaya Adult - Roan', 'Year': '2023', 'Show': 'Kyneton Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Koko Delight', 'Place': '1st', 'Competition': 'Huacaya Junior - Black', 'Year': '2023', 'Show': 'Kyneton Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Senior - Black', 'Year': '2023', 'Show': 'Kyneton Fleece Show' }
+    ];
+
+    const data2024 = [
+        { 'Alpaca (Name)': 'Lemaca Koko Delight', 'Place': '2nd', 'Competition': 'Huacaya Adult - Black', 'Year': '2024', 'Show': 'Berwick Fleece Show' },
+        { 'Alpaca (Name)': 'Lemaca Wynter Delight', 'Place': '1st', 'Competition': 'Huacaya Senior - Roan', 'Year': '2024', 'Show': 'Berwick Fleece Show' },
+        { 'Alpaca (Name)': 'Greenwood Maceyx', 'Place': '2nd', 'Competition': 'Huacaya Aged - Black', 'Year': '2024', 'Show': 'Berwick Fleece Show' }
+    ];
 
   return (
 <div className="container py-4 py-xl-5">
@@ -63,55 +126,15 @@ const Awards = () => {
                         </tr>
                     </thead>
                 <tbody>
-                    <tr>
-                        <td>Green Gully Amigo</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult Male - Black</td>
-                        <td>2018</td>
-                        <td>Murwillumbah Alpaca Halter Show</td>
-                    </tr>
-                    <tr>
-                        <td>Green Gully Amigo</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult Male - Black</td>
-                        <td>2018</td>
-                        <td>Charles Ledgar Alpaca Halter Show</td>
-                    </tr>
-                    <tr>
-                        <td>Green Gully Amigo</td>
-                        <td>1st</td>
-                        <td>Huacaya Adult Male - Black</td>
-                        <td>2018</td>
-                        <td>Grafton Colourbration Halter Show</td>
-                    </tr>
-                    <tr>
-                        <td>Green Gully Amigo</td>
-                        <td>1st</td>
-                        <td>Huacaya Adult Male (Intermediate) - Black</td>
-                        <td>2018</td>
-                        <td>Grafton Colourbration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Green Gully Amigo</td>
-                        <td>1st</td>
-                        <td>Huacaya Adult Male - Black</td>
-                        <td>2018</td>
-                        <td>Glen Innes New England Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Green Gully Amigo</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult Male (Intermediate) - Black</td>
-                        <td>2018</td>
-                        <td>Glen Innes New England Halter Show</td>
-                    </tr>
-                    <tr>
-                        <td>Green Gully Amigo</td>
-                        <td>1st</td>
-                        <td>Huacaya Adult Male (Intermediate) - Black</td>
-                        <td>2018</td>
-                        <td>Maleny Fleece Show</td>
-                    </tr>
+                {sortedData(data2018).map((row, index) => (
+                            <tr key={index}>
+                                <td>{row['Alpaca (Name)']}</td>
+                                <td>{row['Place']}</td>
+                                <td>{row['Competition']}</td>
+                                <td>{row['Year']}</td>
+                                <td>{row['Show']}</td>
+                            </tr>
+                        ))}
                 </tbody>
             </table>
         </div>
@@ -142,346 +165,102 @@ const Awards = () => {
 
         <h1 id="2021awards" className='text-center'>2021</h1><hr style={{color: 'blue'}}></hr>
         <div className="table-responsive text-center">
-            <table className="table text-center">
-                <thead>
-                    <tr>
-                        <th>Alpaca (Name)</th>
-                        <th>Place</th>
-                        <th>Competition</th>
-                        <th>Year</th>
-                        <th>Show</th>
-                    </tr>
-                </thead>
+                            <table className="table text-center">
+                    <thead>
+                        <tr>
+                            <th onClick={() => sortTable('Alpaca (Name)')}>Alpaca (Name)</th>
+                            <th onClick={() => sortTable('Place')}>Place</th>
+                            <th onClick={() => sortTable('Competition')}>Competition</th>
+                            <th onClick={() => sortTable('Year')}>Year</th>
+                            <th onClick={() => sortTable('Show')}>Show</th>
+                        </tr>
+                    </thead>
                 <tbody>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Mature Female - Black</td>
-                        <td>2021</td>
-                        <td>Red Hill VER Celebration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>3rd</td>
-                        <td>Huacaya Mature Female - Black</td>
-                        <td>2021</td>
-                        <td>Royal Hobart Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Junior Female - Black</td>
-                        <td>2021</td>
-                        <td>Red Hill VER Celebration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>3rd</td>
-                        <td>Huacaya Junior Female - Black</td>
-                        <td>2021</td>
-                        <td>Royal Hobart Fleece Show</td>
-                    </tr>
+                {sortedData(data2021).map((row, index) => (
+                            <tr key={index}>
+                                <td>{row['Alpaca (Name)']}</td>
+                                <td>{row['Place']}</td>
+                                <td>{row['Competition']}</td>
+                                <td>{row['Year']}</td>
+                                <td>{row['Show']}</td>
+                            </tr>
+                        ))}
                 </tbody>
             </table>
         </div>
 
         <h1 id="2022awards" className='text-center'>2022</h1><hr style={{color: 'blue'}}></hr>
         <div className="table-responsive text-center">
-            <table className="table text-center">
-                <thead>
-                    <tr>
-                        <th>Alpaca (Name)</th>
-                        <th>Place</th>
-                        <th>Competition</th>
-                        <th>Year</th>
-                        <th>Show</th>
-                    </tr>
-                </thead>
+        <table className="table text-center">
+                    <thead>
+                        <tr>
+                            <th onClick={() => sortTable('Alpaca (Name)')}>Alpaca (Name)</th>
+                            <th onClick={() => sortTable('Place')}>Place</th>
+                            <th onClick={() => sortTable('Competition')}>Competition</th>
+                            <th onClick={() => sortTable('Year')}>Year</th>
+                            <th onClick={() => sortTable('Show')}>Show</th>
+                        </tr>
+                    </thead>
                 <tbody>
-                    <tr>
-                        <td>Green Gully Amigo</td>
-                        <td>3rd</td>
-                        <td>Huacaya Senior Male - Black</td>
-                        <td>2022</td>
-                        <td>Kyneton Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Koko Delight</td>
-                        <td>3rd</td>
-                        <td>Huacaya Junior Female - Brown</td>
-                        <td>2022</td>
-                        <td>Seymour Halter Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>3rd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2022</td>
-                        <td>Royal Bathurst Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2022</td>
-                        <td>Red Hill VER Celebration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>3rd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2022</td>
-                        <td>Bendigo Victoria Colourbration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2022</td>
-                        <td>Royal Melbourne Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>3rd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2022</td>
-                        <td>Seymour Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2022</td>
-                        <td>Kyneton Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2022</td>
-                        <td>Royal Bathurst Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Female (Intermediate) - Black</td>
-                        <td>2022</td>
-                        <td>Hawkesbury Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Female (Intermediate) - Black</td>
-                        <td>2022</td>
-                        <td>Red Hill VER Celebration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Female (Intermediate) - Black</td>
-                        <td>2022</td>
-                        <td>Bendigo Victoria Colourbration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Female (Intermediate) - Black</td>
-                        <td>2022</td>
-                        <td>Royal Melbourne Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>3rd</td>
-                        <td>Huacaya Female (Intermediate) - Black</td>
-                        <td>2022</td>
-                        <td>Seymour Halter Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Female (Intermediate) - Black</td>
-                        <td>2022</td>
-                        <td>Seymour Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Female (Intermediate) - Black</td>
-                        <td>2022</td>
-                        <td>Kyneton Fleece Show</td>
-                    </tr>
+                {sortedData(data2022).map((row, index) => (
+                            <tr key={index}>
+                                <td>{row['Alpaca (Name)']}</td>
+                                <td>{row['Place']}</td>
+                                <td>{row['Competition']}</td>
+                                <td>{row['Year']}</td>
+                                <td>{row['Show']}</td>
+                            </tr>
+                        ))}
                 </tbody>
             </table>
         </div>
         <h1 id="2023awards" className='text-center'>2023</h1><hr style={{color: 'blue'}}></hr>
         <div className="table-responsive text-center">
-            <table className="table text-center">
-                <thead>
-                    <tr>
-                        <th>Alpaca (Name)</th>
-                        <th>Place</th>
-                        <th>Competition</th>
-                        <th>Year</th>
-                        <th>Show</th>
-                    </tr>
-                </thead>
+        <table className="table text-center">
+                    <thead>
+                        <tr>
+                            <th onClick={() => sortTable('Alpaca (Name)')}>Alpaca (Name)</th>
+                            <th onClick={() => sortTable('Place')}>Place</th>
+                            <th onClick={() => sortTable('Competition')}>Competition</th>
+                            <th onClick={() => sortTable('Year')}>Year</th>
+                            <th onClick={() => sortTable('Show')}>Show</th>
+                        </tr>
+                    </thead>
                 <tbody>
-                    <tr>
-                        <td>Lemaca Koko Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Junior - Brown</td>
-                        <td>2023</td>
-                        <td>Berwick Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2023</td>
-                        <td>Berwick Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult Female - Black</td>
-                        <td>2023</td>
-                        <td>Bendigo Victoria Colourbration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult Female - Roan</td>
-                        <td>2023</td>
-                        <td>Berwick Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult Female - Roan</td>
-                        <td>2023</td>
-                        <td>Berwick Halter Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>3rd</td>
-                        <td>Huacaya Adult Female - Roan</td>
-                        <td>2023</td>
-                        <td>Bendigo Victoria Colourbration Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult Female - Roan</td>
-                        <td>2023</td>
-                        <td>Ballarat Sheep + Alpaca Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Koko Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Junior Female - Black</td>
-                        <td>2023</td>
-                        <td>Ballarat Sheep + Alpaca Halter Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2023</td>
-                        <td>Ballarat Sheep + Alpaca Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Alpacas</td>
-                        <td>4th</td>
-                        <td>Alpaca Photo Competition</td>
-                        <td>2023</td>
-                        <td>Bendigo Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Senior Female - Black</td>
-                        <td>2023</td>
-                        <td>Royal Melbourne Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult Female - Roan</td>
-                        <td>2023</td>
-                        <td>Royal Melbourne Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Koko Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Junior Female - Black</td>
-                        <td>2023</td>
-                        <td>Royal Melbourne Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Adult - Roan</td>
-                        <td>2023</td>
-                        <td>Royal Launceston Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult - Roan</td>
-                        <td>2023</td>
-                        <td>Kyneton Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Koko Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Junior - Black</td>
-                        <td>2023</td>
-                        <td>Kyneton Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Senior - Black</td>
-                        <td>2023</td>
-                        <td>Kyneton Fleece Show</td>
-                    </tr>
+                {sortedData(data2023).map((row, index) => (
+                            <tr key={index}>
+                                <td>{row['Alpaca (Name)']}</td>
+                                <td>{row['Place']}</td>
+                                <td>{row['Competition']}</td>
+                                <td>{row['Year']}</td>
+                                <td>{row['Show']}</td>
+                            </tr>
+                        ))}
                 </tbody>
             </table>
         </div>
         <h1 id="2024awards" className='text-center'>2024</h1><hr style={{color: 'blue'}}></hr>
         <div className="table-responsive text-center">
-            <table className="table text-center">
-                <thead>
-                    <tr>
-                        <th>Alpaca (Name)</th>
-                        <th>Place</th>
-                        <th>Competition</th>
-                        <th>Year</th>
-                        <th>Show</th>
-                    </tr>
-                </thead>
+        <table className="table text-center">
+                    <thead>
+                        <tr>
+                            <th onClick={() => sortTable('Alpaca (Name)')}>Alpaca (Name)</th>
+                            <th onClick={() => sortTable('Place')}>Place</th>
+                            <th onClick={() => sortTable('Competition')}>Competition</th>
+                            <th onClick={() => sortTable('Year')}>Year</th>
+                            <th onClick={() => sortTable('Show')}>Show</th>
+                        </tr>
+                    </thead>
                 <tbody>
-                    <tr>
-                        <td>Lemaca Koko Delight</td>
-                        <td>2nd</td>
-                        <td>Huacaya Adult - Black</td>
-                        <td>2024</td>
-                        <td>Berwick Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Lemaca Wynter Delight</td>
-                        <td>1st</td>
-                        <td>Huacaya Senior - Roan</td>
-                        <td>2024</td>
-                        <td>Berwick Fleece Show</td>
-                    </tr>
-                    <tr>
-                        <td>Greenwood Maceyx</td>
-                        <td>2nd</td>
-                        <td>Huacaya Aged - Black</td>
-                        <td>2024</td>
-                        <td>Berwick Fleece Show</td>
-                    </tr>
+                {sortedData(data2024).map((row, index) => (
+                            <tr key={index}>
+                                <td>{row['Alpaca (Name)']}</td>
+                                <td>{row['Place']}</td>
+                                <td>{row['Competition']}</td>
+                                <td>{row['Year']}</td>
+                                <td>{row['Show']}</td>
+                            </tr>
+                        ))}
                 </tbody>
             </table>
         </div>

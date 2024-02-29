@@ -5,6 +5,7 @@ import About from './About';
 import Herd from './Herd';
 import Awards from './Awards';
 import StudService from './StudService';
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
