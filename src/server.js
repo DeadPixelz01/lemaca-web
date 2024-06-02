@@ -25,8 +25,22 @@ db.connect((err) => {
 app.use(cors());
 app.use(express.json());
 
+// display all data
 app.get('/api/awards', (req, res) => {
   const sql = 'SELECT * FROM awards';
+  db.query(sql, (err, result) => {
+    if (err) {
+      console.error('Error fetching data:', err);
+      res.status(500).send('Error fetching data');
+      return;
+    }
+    res.json(result);
+  });
+});
+
+// get the awards for a single alpaca
+app.get('/api/awards/greengullyamigo', (req, res) => {
+  const sql = 'SELECT * FROM awards WHERE alpaca_name LIKE "Green Gully Amigo"';
   db.query(sql, (err, result) => {
     if (err) {
       console.error('Error fetching data:', err);
