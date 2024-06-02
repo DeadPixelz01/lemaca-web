@@ -11,7 +11,9 @@ const Awards = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        console.log('API URL:', process.env.REACT_APP_API_URL);  // Debugging line
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/awards`);
+        console.log('Response data:', response.data);  // Debugging line
         setAwardsData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
