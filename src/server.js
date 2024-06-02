@@ -25,7 +25,7 @@ db.connect((err) => {
 app.use(cors());
 app.use(express.json());
 
-app.get('/awards', (req, res) => {
+app.get('/api/awards', (req, res) => {
   const sql = 'SELECT * FROM awards';
   db.query(sql, (err, result) => {
     if (err) {
