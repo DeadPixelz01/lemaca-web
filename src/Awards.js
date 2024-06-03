@@ -28,6 +28,7 @@ ChartJS.register(
 const Awards = () => {
   const [awardsData, setAwardsData] = useState([]);
   const [sortConfig, setSortConfig] = useState(null);
+  const [selectedPlace, setSelectedPlace] = useState('1st');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,7 +52,7 @@ const Awards = () => {
   }, {});
 
   // process data to count 1st place wins for each alpaca
-  const firstPlaceWins = awardsData.filter(award => award.place === '1st').reduce((acc, award) => {
+  const placeWins = awardsData.filter(award => award.place === selectedPlace).reduce((acc, award) => {
     acc[award.alpaca_name] = (acc[award.alpaca_name] || 0) + 1;
     return acc;
   }, {});
@@ -68,11 +69,11 @@ const Awards = () => {
   };
 
   const pieData = {
-    labels: Object.keys(firstPlaceWins),
+    labels: Object.keys(placeWins),
     datasets: [
       {
-        label: '1st Place Wins',
-        data: Object.values(firstPlaceWins),
+        label: `${selectedPlace} Place Wins`,
+        data: Object.values(placeWins),
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',
           'rgba(54, 162, 235, 0.6)',
@@ -84,6 +85,10 @@ const Awards = () => {
       },
     ],
   };
+
+  const handlePlaceChange = (event) => {
+    setSelectedPlace(event.target.value);
+  }
 
   const sortTable = (column) => {
     let direction = 'ascending';
@@ -121,17 +126,59 @@ const Awards = () => {
         </div>
       </div>
       <div className="row">
-                <div className="col-md-6">
-                  <div className="chart">
-                    <Bar data={chartData} />
-                  </div>
-                </div>
-                <div className="col-md-6">
+        <div className="col-md-6">
+            <div className="chart">
+                <Bar data={chartData} />
+            </div>
+        </div>
+        <div className="col-md-6 d-flex flex-column align-items-center">
                   <div className="chart" style={{ height: '300px' }}>
                     <Pie data={pieData} />
                   </div>
-                </div>
-              </div>
+                  <div className="form-check mt-3">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="placeOptions"
+                      id="firstPlace"
+                      value="1st"
+                      checked={selectedPlace === '1st'}
+                      onChange={handlePlaceChange}
+                    />
+                    <label className="form-check-label" htmlFor="firstPlace">
+                      1st Place
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="placeOptions"
+                      id="secondPlace"
+                      value="2nd"
+                      checked={selectedPlace === '2nd'}
+                      onChange={handlePlaceChange}
+                    />
+                    <label className="form-check-label" htmlFor="secondPlace">
+                      2nd Place
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="placeOptions"
+                      id="thirdPlace"
+                      value="3rd"
+                      checked={selectedPlace === '3rd'}
+                      onChange={handlePlaceChange}
+                    />
+                    <label className="form-check-label" htmlFor="thirdPlace">
+                      3rd Place
+                    </label>
+                  </div>
+        </div>
+      </div>
       <h1 id="awards" className='text-center'>Awards</h1>
       <hr style={{ color: 'blue' }}></hr>
       <div className="table-responsive text-center">
