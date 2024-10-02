@@ -177,6 +177,48 @@ const Awards = () => {
                       3rd Place
                     </label>
                   </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="placeOptions"
+                      id="BestofColourPlace"
+                      value="Best Of Colour"
+                      checked={selectedPlace === 'Best Of Colour'}
+                      onChange={handlePlaceChange}
+                    />
+                    <label className="form-check-label" htmlFor="BestOfColour">
+                      Best Of Colour
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="placeOptions"
+                      id="Champion"
+                      value="Champion"
+                      checked={selectedPlace === 'Champion'}
+                      onChange={handlePlaceChange}
+                    />
+                    <label className="form-check-label" htmlFor="Champion">
+                    Champion
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="placeOptions"
+                      id="ReserveChampion"
+                      value="Reserve Champion"
+                      checked={selectedPlace === 'Reserve Champion'}
+                      onChange={handlePlaceChange}
+                    />
+                    <label className="form-check-label" htmlFor="ReserveChampion">
+                    Reserve Champion
+                    </label>
+                  </div>
         </div>
       </div>
       <h1 id="awards" className='text-center'>Awards</h1>
