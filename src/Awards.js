@@ -182,6 +182,20 @@ const Awards = () => {
                       className="form-check-input"
                       type="radio"
                       name="placeOptions"
+                      id="fourthPlace"
+                      value="4th"
+                      checked={selectedPlace === '4th'}
+                      onChange={handlePlaceChange}
+                    />
+                    <label className="form-check-label" htmlFor="fourthPlace">
+                      4th Place
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="placeOptions"
                       id="BestofColourPlace"
                       value="Best Of Colour"
                       checked={selectedPlace === 'Best Of Colour'}

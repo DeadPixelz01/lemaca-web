@@ -5,6 +5,7 @@ import alpaca_2 from "./img/Lemaca_8.jpeg";
 import alpaca_3 from "./img/Lemaca_10.jpeg";
 import alpaca_4 from "./img/Lemaca_11.jpeg";
 import alpaca_5 from "./img/Koko-picture.jpg";
+import alpaca_6 from "./img/imagineif.jpeg";
 
 
 const Herd = () => {
@@ -95,8 +96,22 @@ the role of keeping our certified males company.</p>
           </div>
         </div>
       </div>
+      <div className="col">
+        <div className="card">
+          <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_6} />
+          <div className="card-body p-4">
+            <h4 className="card-title">Yaringa Imagine If</h4>
+            <p className="card-text"><strong>DoB: </strong>17/02/2022</p>
+            <p className="card-text"><strong>Colour: </strong>Soild True Black</p>
+            <p className="card-text"><strong>Sex: </strong>Certified Male</p>
+            <p className="card-text"><strong>DNA Certification: </strong>256989</p>
+            <p className="card-text">Yaringa Imagine If was purchased from a highly regarded breeder in SA who has achieved impressive results in their showing and breeding program. We are delighted to have the opportunity to extend his genetics and quite nature to our expanding herd. Imagine If has accomplished impressive results when competing in shows.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  
   );
 };
   
