@@ -22,7 +22,7 @@ const Herd = () => {
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_1} />
           <div className="card-body p-4">
-            <h4 className="card-title">Green Gully Amigo (IAR-221309)</h4>
+            <h4 className="card-title">Green Gully Amigo (IAR-221309) - <strong>[SOLD]</strong></h4>
             <p className="card-text"><strong>DoB: </strong>1/9/2016</p>
             <p className="card-text"><strong>Colour: </strong>Soild True Black</p>
             <p className="card-text"><strong>Sex: </strong>Certified Male</p>
@@ -100,7 +100,7 @@ the role of keeping our certified males company.</p>
         <div className="card">
           <img className="card-img-top w-100 d-block fit-cover img-fluid" styles={{height: '200px'}} src={alpaca_6} />
           <div className="card-body p-4">
-            <h4 className="card-title">Yaringa Imagine If</h4>
+            <h4 className="card-title">Yaringa Imagine If (IAR-256989)</h4>
             <p className="card-text"><strong>DoB: </strong>17/02/2022</p>
             <p className="card-text"><strong>Colour: </strong>Soild True Black</p>
             <p className="card-text"><strong>Sex: </strong>Certified Male</p>
